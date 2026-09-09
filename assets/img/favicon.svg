@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-140 -140 280 280">
+  <rect x="-140" y="-140" width="280" height="280" fill="#8E0C22"/>
+  <g fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round">
+    <circle r="106"/>
+    <circle r="66"/>
+    <circle r="26"/>
+    <g id="s">
+      <line x1="0" y1="-26" x2="0" y2="-106"/>
+      <path d="M0,-30 Q17,-52 0,-74 Q-17,-52 0,-30Z"/>
+    </g>
+    <use href="#s" transform="rotate(45)"/>
+    <use href="#s" transform="rotate(90)"/>
+    <use href="#s" transform="rotate(135)"/>
+    <use href="#s" transform="rotate(180)"/>
+    <use href="#s" transform="rotate(225)"/>
+    <use href="#s" transform="rotate(270)"/>
+    <use href="#s" transform="rotate(315)"/>
+  </g>
+</svg>

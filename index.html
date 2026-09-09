@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ñandutí — Sua compra no lugar certo · Paraguai</title>
+<meta name="description" content="Catálogo com preço à vista. Loja física em Ciudad del Este. Pedido direto pelo WhatsApp.">
+<meta name="theme-color" content="#8E0C22">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ñandutí — Sua compra no lugar certo">
+<meta property="og:description" content="Catálogo com preço à vista. Pedido direto pelo WhatsApp.">
+<meta property="og:locale" content="pt_BR">
+<!-- O link deste site é colado no WhatsApp o dia inteiro: sem og:image o
+     preview sai em branco. TROCAR o domínio abaixo quando publicar — og:image
+     exige URL absoluta, caminho relativo o WhatsApp não resolve. -->
+<meta property="og:image" content="https://SEU-DOMINIO.com.br/assets/img/banner/1.webp">
+<meta property="og:image:width" content="2000">
+<meta property="og:image:height" content="667">
+<meta property="og:image:alt" content="Ñandutí Paraguai — mais saúde para o seu dia a dia.">
+<meta property="og:url" content="https://SEU-DOMINIO.com.br/">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Fonte hospedada aqui, não no Google. Eram duas conexões externas
+     bloqueando a primeira pintura, e o fallback do sistema não tem eixo de
+     largura: quando a Archivo chegava, títulos, preços e ficha refluíam
+     inteiros. Agora sai do mesmo servidor, na mesma conexão. -->
+<link rel="preload" as="font" type="font/woff2" href="assets/font/archivo-latin.woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+<!-- o banner é a maior imagem da primeira tela: pedir antes do JS montar a capa -->
+<link rel="preload" as="image" href="assets/img/banner/1-mobile.webp" media="(max-width:640px)">
+<link rel="preload" as="image" href="assets/img/banner/1.webp" media="(min-width:641px)">
+<link rel="icon" href="assets/img/favicon.svg">
+</head>
+<body>
+<!--
+  IMPECCABLE DIRECTION CONTRACT — redesign, brief-pinned (referência de layout enviada pelo usuário)
+
+  THESIS: Loja, não cartaz. O visitante da fronteira já confia no formato de marketplace —
+  busca no topo, departamentos em fileira, prateleiras, ficha na página do item. Este redesenho
+  adota esse formato inteiro e gasta a diferença onde a categoria costuma mentir: preço aberto
+  em toda vitrine, ficha técnica que separa o que é calculado do que só a embalagem sabe.
+  OWN-WORLD: A paleta ñandutí do primeiro build, agora sobre campo claro. Cochonilha (#8E0C22)
+  na barra, nos títulos de seção e no preço; cartões brancos sobre um cinza tingido do próprio
+  vermelho; índigo da bandeira reservado ao bloco de origem; ouro na marca viva; verde só no
+  WhatsApp. O medalhão de renda sobrevive como marca e como campo — não como estrutura.
+  Archivo em três larguras; preço em tabular-nums.
+  STORY: Ele reconhece a loja em meio segundo, acha o produto por busca ou departamento, abre a
+  página, lê a ficha, escolhe a quantidade e sai no WhatsApp com o pedido escrito.
+  FIRST VIEWPORT: Barra cochonilha com a busca ocupando o centro. Banner de capa em duas colunas —
+  slogan e botão pílula à esquerda, vitrine desenhada à direita (formatos em pedestal, foco e
+  reflexo). Fileira de departamentos logo abaixo da dobra, que é o gesto que a referência usa.
+  FORM: Marketplace convencional — escolhido pelo brief, não por hábito meu.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review,
+  the verdict, DESIGN.md, and every shipping raster carrying its provenance.
+-->
+
+<a class="skip" href="#conteudo">Ir direto para o catálogo</a>
+
+<!-- ============ SÍMBOLOS ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <g id="nd-unit">
+      <line x1="0" y1="-24" x2="0" y2="-250" pathLength="1"/>
+      <path d="M0,-62 Q27,-106 0,-150 Q-27,-106 0,-62Z" pathLength="1"/>
+      <path d="M0,-154 Q35,-198 0,-242 Q-35,-198 0,-154Z" pathLength="1"/>
+    </g>
+    <g id="nd-medallion">
+      <circle r="24" pathLength="1"/><circle r="62" pathLength="1"/>
+      <circle r="106" pathLength="1"/><circle r="150" pathLength="1"/>
+      <circle r="198" pathLength="1"/><circle r="242" pathLength="1"/>
+      <use href="#nd-unit" transform="rotate(0)"/><use href="#nd-unit" transform="rotate(22.5)"/>
+      <use href="#nd-unit" transform="rotate(45)"/><use href="#nd-unit" transform="rotate(67.5)"/>
+      <use href="#nd-unit" transform="rotate(90)"/><use href="#nd-unit" transform="rotate(112.5)"/>
+      <use href="#nd-unit" transform="rotate(135)"/><use href="#nd-unit" transform="rotate(157.5)"/>
+      <use href="#nd-unit" transform="rotate(180)"/><use href="#nd-unit" transform="rotate(202.5)"/>
+      <use href="#nd-unit" transform="rotate(225)"/><use href="#nd-unit" transform="rotate(247.5)"/>
+      <use href="#nd-unit" transform="rotate(270)"/><use href="#nd-unit" transform="rotate(292.5)"/>
+      <use href="#nd-unit" transform="rotate(315)"/><use href="#nd-unit" transform="rotate(337.5)"/>
+    </g>
+
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 1.67c2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.25 8.24-1.48 0-2.93-.4-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24Zm-2.5 4.2c-.15 0-.4.06-.6.29-.21.23-.79.77-.79 1.87s.81 2.17.92 2.32c.11.15 1.57 2.4 3.81 3.36.53.23.95.37 1.27.47.53.17 1.02.15 1.4.09.43-.06 1.32-.54 1.5-1.06.19-.52.19-.97.13-1.06-.06-.09-.21-.15-.44-.26-.23-.12-1.32-.65-1.53-.73-.2-.07-.35-.11-.5.12-.15.23-.57.72-.7.87-.13.15-.26.17-.48.06-.23-.12-.96-.36-1.83-1.13-.68-.6-1.13-1.35-1.27-1.58-.13-.23-.01-.35.1-.47.1-.1.23-.26.34-.4.12-.13.15-.23.23-.38.08-.15.04-.29-.02-.4-.06-.12-.5-1.21-.69-1.66-.18-.44-.36-.38-.5-.38h-.42Z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm5 12 4 4"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M19 12H5m6 6-6-6 6-6"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-go" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.2" fill="none" stroke="currentColor" stroke-width="1.4"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M8 12h7.5m-2.8-2.8L15.5 12l-2.8 2.8"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3 12.5V4h8.5L21 13.5 13.5 21 3 12.5Z"/><circle cx="7.8" cy="8.2" r="1.5" fill="currentColor"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 3l7 3v6c0 4.5-3 7.9-7 9-4-1.1-7-4.5-7-9V6l7-3Z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m9 12 2.2 2.2L15.4 10"/></symbol>
+    <symbol id="i-id" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6.2 16c.5-1.5 1.6-2.3 2.8-2.3s2.3.8 2.8 2.3M14 9.5h4M14 12.5h4M14 15.5h2.5"/></g></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h11v8H2zM13 10.5h3.8l3.2 3.2V15h-7"/><circle cx="6.5" cy="17.2" r="1.9"/><circle cx="16.8" cy="17.2" r="1.9"/></g></symbol>
+    <symbol id="i-pct" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M18.5 5.5l-13 13"/><circle cx="8.5" cy="8.5" r="2.6"/><circle cx="15.5" cy="15.5" r="2.6"/></g></symbol>
+    <symbol id="i-coins" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.4v9.2M14.6 9.4c-.5-.8-1.4-1.2-2.6-1.2-1.5 0-2.6.8-2.6 2 0 2.7 5.4 1.4 5.4 4.1 0 1.2-1.2 2-2.8 2-1.2 0-2.2-.5-2.7-1.3"/></g></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M14 3H6v18h12V7l-4-4Z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M14 3v4h4M9 12h6M9 16h4"/></symbol>
+
+    <!-- glifos de formato: substituíveis por foto real -->
+    <symbol id="g-ampola" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.4 4h3.2M16 4v3.4M13.8 7.4h4.4M13.4 7.4c0 1.9-.9 2.6-.9 4.1v13.6c0 1.6.9 2.5 2.4 2.5h2.2c1.5 0 2.4-.9 2.4-2.5V11.5c0-1.5-.9-2.2-.9-4.1"/><path d="M12.5 18.6h7" stroke-width="1.1" opacity=".55"/></g></symbol>
+    <symbol id="g-vial" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="3.5" width="8" height="4" rx="1"/><path d="M13.2 7.5v3.1M18.8 7.5v3.1"/><rect x="10.4" y="10.6" width="11.2" height="17.4" rx="2.4"/><path d="M10.4 17.4h11.2" stroke-width="1.1" opacity=".55"/></g></symbol>
+    <symbol id="g-po" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="3.5" width="8" height="4" rx="1"/><path d="M13.2 7.5v3.1M18.8 7.5v3.1"/><rect x="10.4" y="10.6" width="11.2" height="17.4" rx="2.4"/><path d="M10.6 22.4c2.4-1.5 3.6.6 5.4.6s3-2 5.4-.6v3.2c0 1.4-1 2.4-2.4 2.4h-6c-1.4 0-2.4-1-2.4-2.4Z" fill="currentColor" stroke="none" opacity=".28"/><path d="M10.6 22.4c2.4-1.5 3.6.6 5.4.6s3-2 5.4-.6" stroke-width="1.2"/></g></symbol>
+    <symbol id="g-cluster" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3.6" y="12" width="7.4" height="14.4" rx="1.8"/><rect x="4.8" y="9.2" width="5" height="2.8" rx=".8"/><rect x="21" y="12" width="7.4" height="14.4" rx="1.8"/><rect x="22.2" y="9.2" width="5" height="2.8" rx=".8"/><rect x="12.2" y="7.4" width="7.6" height="19" rx="1.9"/><rect x="13.4" y="4.6" width="5.2" height="2.8" rx=".8"/><path d="M3.6 21.4h7.4M21 21.4h7.4M12.2 19.2h7.6" stroke-width="1" opacity=".5"/></g></symbol>
+    <symbol id="g-caneta" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="11.8" y="2.6" width="8.4" height="15.2" rx="2.6"/><path d="M13.4 17.8v4.6c0 1 .7 1.7 1.6 1.7h2c.9 0 1.6-.7 1.6-1.7v-4.6"/><path d="M16 24.1v4.3"/><path d="M11.8 8.6h8.4M11.8 12.2h8.4" stroke-width="1.1" opacity=".55"/></g></symbol>
+    <symbol id="g-tubo" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="12.8" y="2.8" width="6.4" height="3.4" rx=".9"/><path d="M10.6 6.2h10.8l-1.5 20.4c-.1 1-.8 1.6-1.7 1.6h-4.4c-.9 0-1.6-.6-1.7-1.6Z"/><path d="M11.4 24.8h9.2" stroke-width="1.2"/></g></symbol>
+    <symbol id="g-gota" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.2 2.8h3.6v3.4h-3.6z"/><rect x="12.2" y="6.2" width="7.6" height="3" rx=".9"/><rect x="9.6" y="9.2" width="12.8" height="18.8" rx="2.6"/><path d="M9.6 16.4h12.8" stroke-width="1.1" opacity=".55"/><path d="M26 19.6c0 1-.8 1.8-1.8 1.8s-1.8-.8-1.8-1.8 1.8-3.4 1.8-3.4 1.8 2.4 1.8 3.4Z"/></g></symbol>
+    <symbol id="g-capsula" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4.4" y="11.6" width="23.2" height="8.8" rx="4.4" transform="rotate(-32 16 16)"/><path d="M12.6 21.4 19.4 10.6" stroke-width="1.3"/></g></symbol>
+    <symbol id="g-perfume" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="13.2" y="2.4" width="5.6" height="3.2" rx=".8"/><path d="M14.6 5.6v2.4M17.4 5.6v2.4"/><rect x="8.8" y="8" width="14.4" height="20" rx="3"/><path d="M8.8 14.4h14.4" stroke-width="1.1" opacity=".55"/><path d="M23.2 6.4h2.4a1.6 1.6 0 0 1 1.6 1.6v1.6" stroke-width="1.2" opacity=".7"/></g></symbol>
+  </defs>
+</svg>
+
+<!-- ============ FAIXA INSTITUCIONAL (só fatos da loja) ============ -->
+<div class="topo">
+  <div class="topo__in">
+    <p class="topo__loc"><svg aria-hidden="true"><use href="#i-pin"/></svg><span data-cidade>Ciudad del Este, Paraguai</span></p>
+    <p class="topo__r"><span class="topo__lang">Português (BRL)</span><span class="topo__sep" aria-hidden="true"></span><span class="topo__moeda">Dólar = R$ <b id="topoDolar">5,28</b></span><span class="topo__sep" aria-hidden="true"></span><span class="topo__nota">Preços em R$ · à vista</span></p>
+  </div>
+</div>
+<!-- ============ CABEÇALHO ============ -->
+<header class="hd">
+  <div class="hd__in">
+    <button class="hd__menu" type="button" id="hdMenu" aria-label="Abrir menu de departamentos"
+            aria-expanded="false" aria-controls="gav">
+      <svg aria-hidden="true"><use href="#i-menu"/></svg>
+    </button>
+    <a class="brand" href="./" data-home aria-label="Ñandutí Paraguai — início">
+      <span class="brand__mark" aria-hidden="true"><svg viewBox="-260 -260 520 520"><use href="#nd-medallion"/></svg></span>
+      <span class="brand__t"><b data-marca>Ñandutí</b><i>Paraguai</i></span>
+    </a>
+    <form class="hdsearch" role="search" autocomplete="off" onsubmit="return false">
+      <label class="vh" for="q">Buscar produto</label>
+      <input id="q" type="search" enterkeyhint="search" spellcheck="false" placeholder="O que você está procurando?">
+      <button class="hdsearch__x" type="button" id="qclear" hidden aria-label="Limpar busca"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+      <button class="hdsearch__go" type="button" id="qgo" aria-label="Buscar"><svg aria-hidden="true"><use href="#i-search"/></svg></button>
+    </form>
+    <nav class="hd__side" aria-label="Atendimento">
+      <a class="hd__link" href="#como-comprar">Como comprar</a>
+      <a class="hd__link" href="#aviso">Dúvidas</a>
+      <a class="hd__cta" href="#" data-wa-generic><svg aria-hidden="true"><use href="#i-wa"/></svg><span>Vendedores</span></a>
+    </nav>
+  </div>
+</header>
+<!-- ============ NAVEGAÇÃO DE DEPARTAMENTOS ============ -->
+<nav class="dep" aria-label="Departamentos">
+  <div class="dep__in">
+    <button class="dep__all" type="button" id="depAll" aria-expanded="false" aria-controls="depMenu">
+      <svg class="dep__burger" aria-hidden="true"><use href="#i-menu"/></svg>
+      <span>Toda a loja</span>
+    </button>
+    <div class="dep__quick" id="depQuick"></div>
+  </div>
+  <div class="dep__menu" id="depMenu" hidden></div>
+</nav>
+
+<!-- ============ MENU DE GAVETA (celular) ============ -->
+<div class="gav" id="gav" hidden>
+  <div class="gav__fundo" data-gav-fechar></div>
+  <aside class="gav__p" role="dialog" aria-modal="true" aria-label="Menu">
+    <header class="gav__h">
+      <b>Menu</b>
+      <button class="gav__x" type="button" data-gav-fechar aria-label="Fechar menu">
+        <svg aria-hidden="true"><use href="#i-x"/></svg>
+      </button>
+    </header>
+    <nav class="gav__b" id="gavCorpo" aria-label="Departamentos"></nav>
+  </aside>
+</div>
+
+
+<main id="conteudo">
+
+<!-- ============================================================
+     VISTA: HOME
+     ============================================================ -->
+<div id="viewHome">
+
+  <!-- O banner é imagem: todo o texto dele é pixel. Sem este h1 o documento
+       abre em h2 e nem leitor de tela nem buscador sabem o que é esta página. -->
+  <h1 class="vh">Ñandutí — medicamentos, dermocosméticos e perfumes com preço publicado, em Ciudad del Este</h1>
+
+  <!-- capa -->
+  <section class="capa home-so" aria-label="Destaques">
+    <div class="capa__track" id="capaTrack"></div>
+    <div class="capa__dots" id="capaDots" role="group" aria-label="Escolher destaque"></div>
+  </section>
+
+  <!-- departamentos em ladrilho -->
+  <section class="tiles home-so" aria-label="Departamentos">
+    <div class="tiles__in" id="tiles"></div>
+  </section>
+
+  <!-- prateleira horizontal -->
+  <section class="wrap home-so">
+    <div class="shelf">
+      <div class="shead">
+        <h2>Um de cada linha</h2>
+        <div class="shead__nav">
+          <button type="button" class="sarrow" data-scroll="-1" aria-label="Rolar para a esquerda"><svg aria-hidden="true"><use href="#i-back"/></svg></button>
+          <button type="button" class="sarrow" data-scroll="1" aria-label="Rolar para a direita"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+      <div class="rail" id="shelfRail"></div>
+    </div>
+  </section>
+
+  <!-- faixa paraguai -->
+  <section class="py home-so">
+    <div class="py__in">
+      <div class="py__flag" id="flagCard" role="img" aria-label="Bandeira do Paraguai — frente com o Escudo Nacional, verso com o Selo da Fazenda">
+        <div class="py__inner">
+          <div class="py__face">
+            <span class="py__band py__band--r"></span>
+            <span class="py__band py__band--w">
+              <svg viewBox="-50 -50 100 100" aria-hidden="true">
+                <circle r="46" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                <circle r="39" fill="none" stroke="currentColor" stroke-width=".8"/>
+                <path d="M0-22 5.2-6.8H21L8.4 2.6l4.8 15.2L0 8.4l-13.2 9.4 4.8-15.2L-21-6.8h15.8Z" fill="currentColor"/>
+                <path d="M-30 6a30 30 0 0 0 60 0" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              </svg>
+              <em>Escudo Nacional</em>
+            </span>
+            <span class="py__band py__band--b"></span>
+          </div>
+          <div class="py__face py__face--v">
+            <span class="py__band py__band--r"></span>
+            <span class="py__band py__band--w">
+              <svg viewBox="-50 -50 100 100" aria-hidden="true">
+                <circle r="46" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                <circle r="39" fill="none" stroke="currentColor" stroke-width=".8"/>
+                <path d="M-16 16h32M-13 16c0-9 5-15 13-15s13 6 13 15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+                <path d="M0-19a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z" fill="none" stroke="currentColor" stroke-width="2.2"/>
+                <path d="M-9-19c-3-4-1-8 3-7M9-19c3-4 1-8-3-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+              <em>Selo da Fazenda</em>
+            </span>
+            <span class="py__band py__band--b"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- catálogo completo, por linha -->
+  <section class="wrap" id="catalogo">
+    <div class="catlay">
+      <aside class="side" aria-label="Filtros do catálogo">
+        <section class="side__box">
+          <h2><span>Departamentos</span><span aria-hidden="true">–</span></h2>
+          <ul class="side__deps" id="sideDeps"></ul>
+        </section>
+        <section class="side__box side__help">
+          <h2><span>Atendimento</span><span aria-hidden="true">–</span></h2>
+          <p>Preço à vista em R$, já na tela. O pedido sai no WhatsApp com nome e valor escritos.</p>
+          <a class="btn btn--wa btn--full" href="#" data-wa-generic><svg aria-hidden="true"><use href="#i-wa"/></svg>Falar agora</a>
+        </section>
+      </aside>
+      <div class="catmain">
+        <nav class="crumbs" aria-label="Você está em">
+          <a href="./" data-home>Home</a><i aria-hidden="true">›</i>
+          <a href="#catalogo" data-home>Catálogo</a><i aria-hidden="true">›</i>
+          <b id="crumbAtual" aria-current="page">Produtos</b>
+        </nav>
+        <div class="cathd">
+          <div class="cathd__t">
+            <h2 id="catTitulo">Produtos</h2>
+            <p id="catConta" aria-live="polite">0 resultados</p>
+          </div>
+          <button class="cathd__x" type="button" id="catLimpar" hidden>
+            <svg aria-hidden="true"><use href="#i-x"/></svg><span>Limpar busca</span>
+          </button>
+          <label class="ordena" for="ordenar">
+            <span>Ordenar por:</span>
+            <select id="ordenar">
+              <option value="rel">Mais relevantes</option>
+              <option value="pmin">Preço: menor para maior</option>
+              <option value="pmax">Preço: maior para menor</option>
+              <option value="az">Nome: A → Z</option>
+              <option value="za">Nome: Z → A</option>
+            </select>
+          </label>
+        </div>
+        <!-- Lista única, usada quando o cliente escolhe uma ordem: aí o catálogo
+             para de ser lido por departamento e vira ranking. -->
+        <div class="grid" id="catFlat" hidden></div>
+        <div id="catRoot"></div>
+        <p class="vazio" id="catNone" hidden>
+          Não tenho nada com esse nome na tabela.
+          <button type="button" id="catNoneAsk">Pergunte no WhatsApp</button>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- texto institucional -->
+  <section class="wrap home-so" id="como-comprar">
+    <div class="sobre">
+      <h2>Como comprar</h2>
+      <p>Todo produto aqui já está com o preço na tela — você não precisa perguntar quanto custa. Abre o produto, vê a foto, a apresentação e a ficha, escolhe quantas unidades quer e toca em <b>Pedir no WhatsApp</b>. A mensagem já vai escrita com o nome e o valor, então é só mandar.</p>
+      <p>O resto a gente combina na conversa: se tem em estoque, como você prefere pagar e como vai receber — pode retirar em mãos ou pedir para enviarmos. Nada é cobrado pelo site.</p>
+      <p><b>Antes de fechar, confiro a embalagem com você</b> — composição, lote e validade, lendo o que está impresso na caixa. Se estiver com dúvida sobre uso ou dose, essa é conversa para o seu médico, não para mim.</p>
+    </div>
+  </section>
+
+  <!-- chamada -->
+  <section class="cta home-so">
+    <div class="cta__in">
+      <svg class="cta__lace" viewBox="-260 -260 520 520" aria-hidden="true"><use href="#nd-medallion"/></svg>
+      <div>
+        <h2>Fale com quem tem o produto na mão.</h2>
+      </div>
+      <a class="btn btn--wa btn--lg" href="#" data-wa-generic>
+        <svg aria-hidden="true"><use href="#i-wa"/></svg>Chamar agora
+      </a>
+    </div>
+  </section>
+</div>
+
+<!-- ============================================================
+     VISTA: PRODUTO
+     ============================================================ -->
+<div id="viewProduto" hidden></div>
+
+</main>
+
+<!-- ============ INFORMAÇÕES DA LOJA ============ -->
+<section class="trust" aria-label="Informações da loja">
+  <div class="wrap">
+    <div class="info">
+      <div><svg aria-hidden="true"><use href="#i-id"/></svg><h3>Documentos</h3><p>RG ou passaporte válidos na loja</p></div>
+      <div><svg aria-hidden="true"><use href="#i-truck"/></svg><h3>Entregas</h3><p>Enviamos para o Brasil — combine no WhatsApp</p></div>
+      <div><svg aria-hidden="true"><use href="#i-tag"/></svg><h3>Preços</h3><p>Todo valor à vista na tela</p></div>
+      <div><svg aria-hidden="true"><use href="#i-coins"/></svg><h3>Valores</h3><p>Podem variar sem aviso prévio</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="ft">
+  <div class="ft__in">
+    <div class="ft__col ft__col--brand">
+      <a class="brand brand--ft" href="./" data-home>
+        <span class="brand__mark" aria-hidden="true"><svg viewBox="-260 -260 520 520"><use href="#nd-medallion"/></svg></span>
+        <span class="brand__t"><b data-marca>Ñandutí</b><i>Paraguai</i></span>
+      </a>
+      <p class="ft__ab">Ñandutí é a renda de Itauguá — a teia de aranha tecida em linha. O nome e a marca desta loja vêm dela.</p>
+    </div>
+    <div class="ft__col">
+      <h3>Loja</h3>
+      <ul id="ftLinhas"></ul>
+    </div>
+    <div class="ft__col">
+      <h3>Ajuda</h3>
+      <ul>
+        <li><a href="#" data-wa-generic>Atendimento no WhatsApp</a></li>
+        <li><a href="#catalogo" data-home>Catálogo completo</a></li>
+        <li><a href="#aviso">Avisos e condições</a></li>
+      </ul>
+    </div>
+    <div class="ft__col">
+      <h3>Contato</h3>
+      <ul>
+        <li><a href="#" data-wa-generic id="ftFone">WhatsApp</a></li>
+        <li><a href="#" data-ig hidden>Instagram</a></li>
+        <li><span data-cidade>Ciudad del Este, Paraguai</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="ft__legal" id="aviso">
+    <div class="ft__legalin">
+      <h3>Antes de pedir</h3>
+      <div class="ft__grid">
+        <p><b>+18.</b> Esta loja é destinada a maiores de 18 anos.</p>
+        <p><b>Prescrição.</b> Vários itens são medicamentos de venda sob prescrição médica. Consulte um profissional de saúde antes de qualquer uso. Não prestamos orientação médica, de dose ou de aplicação.</p>
+        <p><b>Jurisdição.</b> Produtos comercializados no Paraguai, sob legislação paraguaia. A entrada de produtos em outro país está sujeita às regras aduaneiras e sanitárias desse país, e é responsabilidade de quem transporta.</p>
+        <p><b>Preços.</b> Valores em Real, sujeitos a alteração e a confirmação de disponibilidade no momento do pedido. Este site não processa pagamentos.</p>
+        <p><b>Fotos.</b> Foto da caneta Mounjaro: © <a href="https://commons.wikimedia.org/wiki/File:Lilly_mounjaro_KwikPen_Tirzepatid_5_mg_per_dose_rate-9442.jpg" rel="noopener">Raimond Spekking</a> / Wikimedia Commons, sob <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br" rel="noopener">CC BY-SA 4.0</a> (convertida para WebP). Demais fotos: banco oficial dos fabricantes.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="ft__c">© <span data-ano>2026</span> <span data-marca>Ñandutí</span> · <span data-cidade>Ciudad del Este, Paraguai</span></p>
+</footer>
+
+<a class="fab" href="#" data-wa-generic aria-label="Falar no WhatsApp">
+  <svg aria-hidden="true"><use href="#i-wa"/></svg>
+  <span class="fab__t">Falar agora</span>
+</a>
+
+<!-- ============ CAPTURA ============ -->
+<div class="gate" id="gate" hidden>
+  <div class="gate__bd" data-gate-close></div>
+  <div class="gate__box" role="dialog" aria-modal="true" aria-labelledby="gateH">
+    <button class="gate__x" type="button" data-gate-close aria-label="Fechar"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+    <h2 id="gateH">Preço novo, você sabe primeiro.</h2>
+    <p class="gate__p">Aviso pelo WhatsApp quando o valor muda ou chega produto novo. Sem spam, e você sai quando quiser.</p>
+    <form class="gate__f" id="gateForm" novalidate>
+      <label>Nome<input name="nome" type="text" autocomplete="given-name" required placeholder="Como te chamo"></label>
+      <label>WhatsApp<input name="fone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(00) 00000-0000"></label>
+      <label>E-mail<input name="email" type="email" autocomplete="email" required placeholder="voce@email.com"></label>
+      <p class="gate__err" id="gateErr" hidden></p>
+      <button class="btn btn--pri btn--full" type="submit"><span>Quero receber</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+    </form>
+    <p class="gate__fine">Confirmo que tenho 18 anos ou mais. Seus dados ficam comigo, para avisar de preço e estoque.</p>
+    <button class="gate__skip" type="button" data-gate-close>Continuar sem cadastrar</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="assets/js/catalog.data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

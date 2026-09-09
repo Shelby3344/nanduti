@@ -1,0 +1,7 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "nanduti", "runtimeExecutable": "node", "runtimeArgs": ["serve.mjs"], "port": 4321 },
+    { "name": "hipotle", "runtimeExecutable": "python", "runtimeArgs": ["-m", "http.server", "8085", "--directory", "hipotle"], "port": 8085 }
+  ]
+}

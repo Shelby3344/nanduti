@@ -230,7 +230,9 @@ p{margin:0}ul{margin:0;padding:0;list-style:none}a{color:inherit}
 
 <script>
 /* UTM do anúncio atravessa para /entrar (o convite do WhatsApp não aceita
-   parâmetros — a atribuição por criativo vive na URL que você anuncia). */
+   parâmetros — a atribuição por criativo vive na URL que você anuncia).
+   Lead também no CLIQUE (não só na chegada em /entrar): quem clica e o
+   WhatsApp abre fora do navegador nunca voltaria para contar conversão. */
 (function () {
   'use strict';
   document.getElementById('ano').textContent = new Date().getFullYear();
@@ -239,6 +241,15 @@ p{margin:0}ul{margin:0;padding:0;list-style:none}a{color:inherit}
     var links = document.querySelectorAll('a[data-entrar]');
     for (var i = 0; i < links.length; i++) links[i].href = '/entrar/' + q;
   }
+  function lead() {
+    try {
+      if (window.fbq && /^\d{6,20}$/.test(window.ND_PIXEL_ID || ''))
+        fbq('track', 'Lead', { content_name: 'grupo_whatsapp_click' });
+    } catch (e) {}
+  }
+  document.addEventListener('click', function (e) {
+    if (e.target && e.target.closest && e.target.closest('a[data-entrar]')) lead();
+  });
 })();
 </script>
 </body>
